@@ -7,6 +7,7 @@ import news_object
 
 app = Flask( __name__ )
 
+model = news_object.getNewsClassification# pickle.load(open('model_predict.plk', 'rb'))
 
 @app.route( "/" )
 def get_index():
@@ -16,7 +17,7 @@ def get_index():
 @app.route( '/', methods=['post'] )
 def result():
     news = request.form.get( 'news-text' )
-    news_classification = news_object.getNewsClassification( news )
+    news_classification = model( news )
     return render_template( 'result.html', news=news, news_classification=news_classification )
 
 
