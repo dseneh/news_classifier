@@ -1,0 +1,103 @@
+body {
+    /* min-height: 2000px; */
+    /*padding-top: 70px;*/
+    background-image: url(img/news2.jpg); 
+    /*background-image: ;*/
+    /*background-color: rgb(224, 224, 225);*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*background-color: #464646;*/
+    /* margin-bottom: 60px; */
+
+}
+html {
+    position: relative;
+    min-height: 100vh;
+    /*position:relative;*/
+}
+
+.footer {
+    position: absolute;
+    margin-top: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #2e010177;
+    text-align: center;
+}
+h1  {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.header.container {
+    margin-top: 100px;
+}
+.rounded {
+    background-color: rgba(39, 2, 2, 0.596);
+    min-height: 500px;
+    min-width: 500px;
+}
+.col {
+    min-height: 500px;
+}
+.text-area {
+    color: yellow;
+    background-color: rgba(255, 255, 255, 0.335);
+}
+.text-area:focus{
+    background-color: rgba(207, 6, 6, 0.466);
+    color: white;
+
+}
+.content {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+}
+.resultblock {
+    display: inline-block;
+}
+.mb-0 {
+    color: white ;
+    font-size: 1.6rem !important;
+    font-weight: bold;
+}
+input::placeholder {
+    color: white !important;
+    font-size: 2rem !important;
+    text-align: center;
+}
+.header-text {
+    color: rgb(248, 248, 248);
+    font-size: 1em;
+    text-align: center;
+    padding: 0 50px;
+}
+.header-brand {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    ;
+}
+.classifier {
+    font-weight: 200;
+    color: orange;
+
+}
+.text-muted{
+    color: white !important;
+}
+a {
+    color: orange;
+}
+a:link {
+    color: orange;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}

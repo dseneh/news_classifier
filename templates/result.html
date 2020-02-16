@@ -1,0 +1,23 @@
+{% extends 'index.html'%}
+
+{% block result %}
+<div class="resultblock container">
+   
+    {% if (news != ""):  %}
+      {% for k,v in news_classification.items() %}
+    
+    <div class="result-card my-3 p-3 rounded box-shadow">
+        <h4 class="border-bottom border-gray pb-2 mb-0" style="color: yellow;" >{{ k }}</h4>
+        <div class="media text-muted pt-3">
+            <div class="media-body pb-3 mb-0 small lh-125 " style="padding-bottom: 0 !important;">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <p class="content" style="font-size: 1.1rem; font-style: italic; font-weight: 200; color: white;">{{ v }}...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
