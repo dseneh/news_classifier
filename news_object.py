@@ -75,14 +75,14 @@ loaded_model.load_weights("model.h5")
 print("Loaded model from disk")
  
 # evaluate loaded model on test data
-loaded_model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
-loaded_model._make_predict_function()
-print("done")
+# loaded_model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
+# loaded_model._make_predict_function()
+# print("done")
 
 #Vetorization
 tokenizer = Tokenizer(num_words=MAX_NUM_WORDS)
-tokenizer.fit_on_texts(texts)
-sequences = tokenizer.texts_to_sequences(texts)
+# tokenizer.fit_on_texts(texts)
+# sequences = tokenizer.texts_to_sequences(texts)
 
 
 

@@ -15,3 +15,4 @@ tflearn==0.3.2
 Flask==1.1.1
 Jinja2==2.11.1
 gunicorn
+nltk
