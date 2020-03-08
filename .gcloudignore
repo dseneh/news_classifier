@@ -1,0 +1,11 @@
+Dockerfile
+README.md
+.gitignore
+*.pyc
+*.plk
+*.pyo
+*.pyd
+*.venu
+*.idea
+*.vscode
+__pycache__

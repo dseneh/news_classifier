@@ -1,0 +1,13 @@
+application: newsclassification
+runtime: python
+version: 1
+ 
+api_version: 1
+handlers: 
+  - 
+    script: app.app
+    url: /
+  - 
+    script: app.app
+    url: /index\.html
+threadsafe: true

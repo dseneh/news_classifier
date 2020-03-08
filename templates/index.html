@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./styles.css') }}">
+    <title>News Classifier</title>
+</head>
+
+<body>
+    <div class="header container">
+        <h1 class="header-brand"><i class="fa fa-newspaper-o" style="color: wheat;"></i> NEWS<span class="classifier">CLASSIFIER</span></h1>
+        <p class="header-text">This is a simple application buit using deep neural network. It predicts the category of a news based on the news content (your input).
+            <br>
+                Input the content below and clik the submit button:
+        </p>
+        <div>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        
+                      <div class="col col-lg-6 col-md-12 col-sm-12">
+                        <div class="result-card my-3 p-3 rounded box-shadow">
+                            <h4 class="border-bottom border-gray pb-2 mb-0" style="color:rgb(255, 255, 255)">Give me the news 😐</h4>
+                            <div class="media text-muted pt-3">
+                                <div class="media-body pb-3 mb-0 small lh-125 " style="padding-bottom: 0 !important;">
+                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                        <form action="/" method="POST">
+                                        
+                                            <div class="form-group d-flex">
+                                                <textarea name="news-text" class="text-area form-control" placeholder="Input the news here..." id="" cols="60" rows="14"></textarea>
+                                            </div>
+                                                                                       
+                                            <button type="submit" class="btn btn-block btn-warning">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col col-lg-6 col-md-12 col-sm-12">
+                        {% block result %} {% endblock %}
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Developed by Deward Seneh | 2020 - Powered by <a href="http://revature.com" target="_blank">Revature</a></span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

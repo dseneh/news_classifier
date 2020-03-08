@@ -1,0 +1,16 @@
+README.md
+.gitignore
+*.pyc
+*.plk
+*.pyo
+*.pyd
+*.venu
+*.idea
+*.vscode
+__pycache__
+*.ipynb
+newsclassification.pyc
+docker_temp
+.gcloudignore
+.dockerignore
+README.md
