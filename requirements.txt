@@ -13,5 +13,5 @@ tensorboard==1.14.0
 tensorflow-estimator==1.14.0
 tflearn==0.3.2
 Flask==1.1.1
-Jinja2==2.11.1
+Jinja2==2.11.3
 gunicorn
